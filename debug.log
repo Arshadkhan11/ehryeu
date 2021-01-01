@@ -1,0 +1,85 @@
+[1214/211031.960:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1215/162152.376:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1217/003408.204:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1217/003408.440:ERROR:exception_snapshot_win.cc(99)] thread ID 17360 not found in process
+[1217/003408.933:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1217/003408.933:ERROR:exception_snapshot_win.cc(99)] thread ID 1792 not found in process
+[1217/003408.955:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003408.955:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003408.971:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003408.971:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.087:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.087:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.134:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1217/003409.134:ERROR:exception_snapshot_win.cc(99)] thread ID 15896 not found in process
+[1217/003409.172:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.172:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.187:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1217/003409.187:ERROR:exception_snapshot_win.cc(99)] thread ID 15916 not found in process
+[1217/003409.187:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.187:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.203:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.203:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.256:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1217/003409.256:ERROR:exception_snapshot_win.cc(99)] thread ID 12964 not found in process
+[1217/003409.256:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.256:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.256:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1217/003409.256:ERROR:exception_snapshot_win.cc(99)] thread ID 8348 not found in process
+[1217/003409.287:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.287:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.334:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.334:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003408.933:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.256:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.187:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.172:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003408.955:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.203:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.187:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.134:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.087:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.287:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.334:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003408.971:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.256:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.256:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.488:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.488:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.488:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1217/003409.535:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1217/003409.535:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1217/003409.535:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1218/005616.574:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1218/020530.052:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1218/020530.052:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1218/020530.052:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1218/020530.396:ERROR:exception_snapshot_win.cc(99)] thread ID 12148 not found in process
+[1218/020530.396:ERROR:exception_snapshot_win.cc(99)] thread ID 11928 not found in process
+[1218/020530.396:ERROR:exception_snapshot_win.cc(99)] thread ID 11260 not found in process
+[1218/210908.678:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1219/170222.873:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1221/173250.748:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1221/205613.675:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1221/211522.954:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1221/211523.001:ERROR:exception_snapshot_win.cc(99)] thread ID 11968 not found in process
+[1221/211522.954:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1221/211523.001:ERROR:exception_snapshot_win.cc(99)] thread ID 11272 not found in process
+[1228/232547.624:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1229/025956.690:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1229/025956.706:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1229/025956.706:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1229/025957.128:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1229/025957.456:ERROR:exception_snapshot_win.cc(99)] thread ID 948 not found in process
+[1229/025957.456:ERROR:exception_snapshot_win.cc(99)] thread ID 6140 not found in process
+[1229/025957.815:ERROR:exception_snapshot_win.cc(99)] thread ID 15292 not found in process
+[1229/025957.815:ERROR:exception_snapshot_win.cc(99)] thread ID 15952 not found in process
+[1229/025957.940:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1229/025957.940:ERROR:exception_snapshot_win.cc(99)] thread ID 2644 not found in process
+[1229/025958.081:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1229/025958.081:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1229/025958.081:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1229/025958.081:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1229/025958.081:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1231/135609.020:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1231/234821.943:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
