@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>EHRYEU - Contact us</title>
-  <meta content="looking for a Web Services or Digital Marketing agency? . Visit our website , We have good affordable packages for various services to our clients." name="description">
-  <meta content="Digital marketing, Web Development,SEO, SEM, SMM, PPC, Lead Generation, Email Marketing" name="keywords">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
@@ -38,7 +38,7 @@
     <div class="contact-info mr-auto">
       <ul>
         <li><i class="icofont-envelope"></i><a href="#"> admin@ehryeu.com</a></li>
-        <li><i class="icofont-phone"></i> +91 6360218664 , +91 9980354261</li>
+        <li><i class="icofont-phone"></i> 9741629893 , 9980354261</li>
         
       </ul>
 
@@ -127,14 +127,64 @@
               <div class="info-box">
                 <i class="bx bx-phone-call"></i>
                 <h3>Call Us</h3>
-                <p>+91 6360218664<br>+91 9980354261</p>
+                <p>+91 9741629893<br>+91 9980354261</p>
               </div>
             </div>
           </div>
-  
+          <?php
+          if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+              $name = $_POST['name'];
+              $email = $_POST['email'];
+              $number = $_POST['number'];
+              $msg = $_POST['msg'];
+              
+            
+            // Connecting to the Database
+            $servername = "localhost";
+            $username = "root";
+           
+            $password = "";
+            $database = "contact";
+      
+            // Create a connection
+            
+            // Die if connection was not successful
+            if (!$conn){
+                die("Sorry we failed to connect: ". mysqli_connect_error());
+            }
+            else{ 
+              // Submit these to a database
+              // Sql query to be executed 
+              $sql = "INSERT INTO `contact` (`name`, `email`, `number`, `msg`,) VALUES ('$name', '$email', '$number', '$msg')";
+              $result = mysqli_query($sql);
+       
+              if($result){
+                echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> Your entry has been submitted successfully!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>';
+              }
+              else{
+                  // echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
+                  echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>';
+              }
+      
+            }
+      
+          }
+      
+          
+      ?>
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
             <div class="col-xl-9 col-lg-12 mt-4">
-              <form action="submit.php" method="POST" role="form" class="email-form">
+              <form action="contact us.php" method="POST" role="form" class="email-form">
                 <div class="form-row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -146,7 +196,7 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter Your Phone" data-rule="minlen:4" data-msg="Please enter your number" />
+                  <input type="text" class="form-control" name="number" id="number" placeholder="Enter Your Phone" data-msg="Please enter your number" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
@@ -183,7 +233,7 @@
                 No, 241/C, 2ND CROSS, ENAM MOSQUE STREET <br>
                 RASHAD NAGAR, AC POST<br>
                 BANGALORE, 560045 <br><br>
-                <strong>Phone:</strong> +91 6360218664 , +91 9980354261<br>
+                <strong>Phone:</strong> 6360218664 , 9980354261<br>
                 <strong>Email:</strong> admin@ehryeu.com<br>
               </p>
             </div>
@@ -235,7 +285,7 @@
         </div>
         <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
           <a href="https://twitter.com/Ehryeutech?s=08" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/ehryeu" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.facebook.com/ehryeu.technologies" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://www.instagram.com/ehryeu.technologies/" class="instagram"><i class="bx bxl-instagram"></i></a>
           
           <a href="https://www.linkedin.com/company/ehryeu" class="linkedin"><i class="bx bxl-linkedin"></i></a>
