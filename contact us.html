@@ -9,24 +9,6 @@
   <meta content="looking for a Web Services or Digital Marketing agency? . Visit our website , We have good affordable packages for various services to our clients." name="description">
   <meta content="Digital marketing, Web Development,SEO, SEM, SMM, PPC, Lead Generation, Email Marketing" name="keywords">
 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MHNML6W');</script>
-<!-- End Google Tag Manager -->
-  
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTY4QFRHGN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DTY4QFRHGN');
-</script>
-  
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
@@ -50,11 +32,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHNML6W"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
  <!-- ======= Bar ======= -->
  <section id="topbar" class="d-none d-lg-block">
   <div class="container d-flex">
@@ -116,7 +93,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container" data-aos="fade-in">
       <h1 class="w3-animate-left">Get in touch</h1>
-      <h2 class="w3-animate-down">Feel free to reach us.</h2>
+      <h2 class="w3-animate-down">Whatsapp us at +91 6360218664 or mail us at admin@ehryeu.com</h2>
       
     </div>
   </section><!-- End Hero --></br></br></br></br></br></br></br></br>
@@ -126,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
           <div class="section-title">
             <h2 data-aos="fade-up">Get in touch</h2>
-            <p data-aos="fade-up">Whatsapp us at +91 6360218664 or mail us at admin@ehryeu.com </p>
+            <p data-aos="fade-up">Fill this form to do business with us </p>
           </div>
   
           <div class="row justify-content-center">
@@ -154,36 +131,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
           </div>
+            <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='thankyou.html';}"></iframe> 
   
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
             <div class="col-xl-9 col-lg-12 mt-4">
-              <form action="submit.php" method="POST" role="form" class="email-form">
+              <form method="post" autocomplete="off" name="google-sheet">
                 <div class="form-row">
                   <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
+                    <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                    
                   </div>
                   <div class="col-md-6 form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validate"></div>
+                    <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter Your Phone" data-rule="minlen:4" data-msg="Please enter your number" />
+                  <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="subject" rows="5"   placeholder="Enter Your Message Here..."></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="msg" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Enter Your Message Here..."></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
+                  <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+              </div> 
+               </form>
             </div>
+  
+                 
   
           </div>
   
@@ -297,7 +275,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
       });
     </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwOXmLvSg4ecTJ6jmqKnaWUy6gj8uiKguWLTSkWhhUzWEGn_KiZ/exec'
+    const form = document.forms['google-sheet']
   
-  </body>
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
   
   </html>
