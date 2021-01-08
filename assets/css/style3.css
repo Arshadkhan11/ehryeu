@@ -638,6 +638,19 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.4s;
 }
 
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #006569;
+    border: none;
+    cursor: pointer;
+    margin-right: 6%;
+    color: rgb(246, 246, 252);
+    margin-top: 4%;
+}
 .contact .email-form button[type="submit"]:hover {
   background: #038c91;
 }
